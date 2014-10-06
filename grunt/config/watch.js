@@ -1,5 +1,8 @@
 module.exports = {
 	grunt: {
+		options: {
+			reload: true
+		},
 		files: [
 			'<%= files.grunt %>',
 			'<%= files.config %>'
