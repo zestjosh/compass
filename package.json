@@ -80,6 +80,7 @@
     "grunt-stylestats": "",
     "grunt-wp-css": "cedaro/grunt-wp-css#develop",
     "grunt-wp-i18n": "",
+    "jit-grunt": "^0.8.0",
     "load-grunt-config": "",
     "load-grunt-tasks": "",
     "semver": "",
