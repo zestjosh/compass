@@ -1,12 +1,12 @@
 {
-	"name": "flagshipwp/compass",
-	"description": "The most advanced WordPress Starter theme ever created.",
-	"type": "wordpress-theme",
-	"config": {
-		"vendor-dir": "assets/composer"
-	},
-	"require": {
-		"justintadlock/hybrid-core": "~2.0",
-		"zamoose/themehookalliance": "dev-master"
-	}
+  "name": "flagshipwp/compass",
+  "description": "The most advanced WordPress Starter theme ever created.",
+  "type": "wordpress-theme",
+  "config": {
+    "vendor-dir": "assets/composer"
+  },
+  "require": {
+    "justintadlock/hybrid-core": "~2.0",
+    "zamoose/themehookalliance": "dev-master"
+  }
 }
