@@ -1,3 +1,5 @@
 module.exports = {
-	// Yes, this is empty, but still needed.
+	install: {
+		// Yes, this is empty, but still needed.
+	}
 };
