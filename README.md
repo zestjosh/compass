@@ -80,7 +80,7 @@ composer global require "phpmd/phpmd=*"
 composer global require "phpunit/phpunit=*"
 composer global require "sebastian/phpcpd=*"
 composer global require "sebastian/phpdcd=*"
-composer global config -e # add ,"minimum-stability":"dev"
+composer config -g -e # add ,"minimum-stability":"dev"
 composer global require 'halleck45/phpmetrics=@dev'
 ~~~
 
