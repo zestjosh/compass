@@ -4,7 +4,6 @@ module.exports = function( grunt ) {
 
 	// Load grunt plugins
 	require( 'time-grunt' )(grunt);
-	require( 'load-grunt-tasks' )(grunt);
 
 	// Define project configuration
 	var project = {
@@ -65,5 +64,11 @@ module.exports = function( grunt ) {
 	});
 
 	// Register Tasks
-	grunt.loadTasks( project.paths.tasks );
+	require( 'jit-grunt' )(grunt, {
+		addtextdomain: 'grunt-wp-i18n',
+		scsslint: 'grunt-scss-lint',
+		makepot: 'grunt-wp-i18n',
+		wpcss: 'grunt-wp-css',
+		loadTasks: project.paths.tasks
+	});
 };
