@@ -4,6 +4,7 @@ module.exports = {
 		style: 'expanded',
 		trace: true,
 		lineNumbers: true,
+		includePaths: require( 'node-neat' ).includePaths,
 		banner:
 			'/*!\n' +
 			'Theme Name:  <%= pkg.theme.name %>\n' +
