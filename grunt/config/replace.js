@@ -1,22 +1,4 @@
 module.exports = {
-	style: {
-		options: {
-			patterns: [
-				{
-					// Add line break between banner and minified
-					match: /\*\/(?=\S)/g,
-					replacement: '*/\n'
-				}
-			]
-		},
-		files: [{
-			expand: true,
-			src: [
-				'<%= paths.tmp %>style.min.css',
-				'<%= paths.tmp %>style-rtl.min.css'
-			]
-		}]
-	},
 	stylecomments: {
 		options: {
 			patterns: [
