@@ -47,6 +47,7 @@
   "devDependencies": {
     "grunt": "",
     "grunt-autoprefixer": "",
+    "grunt-banner": "",
     "grunt-bowercopy": "",
     "grunt-bump": "",
     "grunt-checktextdomain": "",

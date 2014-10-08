@@ -53,7 +53,7 @@ module.exports = {
 			'replace:stylecomments',
 			'cssjanus',
 			'cssmin:style',
-			'replace:style',
+			'usebanner',
 			'copy:css'
 		]
 	}

@@ -69,6 +69,7 @@ module.exports = function( grunt ) {
 		scsslint: 'grunt-scss-lint',
 		makepot: 'grunt-wp-i18n',
 		wpcss: 'grunt-wp-css',
+		usebanner: 'grunt-banner',
 		loadTasks: project.paths.tasks
 	});
 };
