@@ -35,7 +35,7 @@ build:
   - 'newer:replace:stylecomments'
   - 'newer:cssjanus'
   - 'newer:cssmin'
-  - 'newer:replace:style'
+  - 'newer:usebanner'
   - 'newer:copy:css'
 # Build Fonts from source to production
 'build:font':
