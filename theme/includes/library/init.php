@@ -23,5 +23,5 @@ function flagship_get_library_directory() {
 // Load all the PHP files in the library directory.
 require_once flagship_get_library_directory() . '/classes/class-search-form.php';
 require_once flagship_get_library_directory() . '/attributes.php';
-require_once flagship_get_library_directory() . '/general.php';
 require_once flagship_get_library_directory() . '/hybrid-tweaks.php';
+require_once flagship_get_library_directory() . '/template-helpers.php';
