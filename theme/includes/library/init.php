@@ -17,7 +17,7 @@
  * @return  string
  */
 function flagship_get_library_directory() {
-	return get_template_directory() . '/includes/library';
+	return apply_filters( 'flagship_library_directory', dirname( __FILE__ ) );
 }
 
 // Load all the PHP files in the library directory.
