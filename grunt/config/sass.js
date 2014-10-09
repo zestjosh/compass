@@ -1,3 +1,4 @@
+// https://github.com/gruntjs/grunt-contrib-sass
 module.exports = {
 	options: {
 		force: true,

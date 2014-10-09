@@ -1,3 +1,4 @@
+// https://github.com/jsoverson/grunt-plato
 module.exports = function( grunt ) {
 	'use strict';
 	return {

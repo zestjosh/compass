@@ -1,3 +1,4 @@
+// https://github.com/outaTiME/grunt-replace
 module.exports = {
 	style: {
 		options: {

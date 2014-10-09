@@ -1,3 +1,4 @@
+// https://github.com/alappe/grunt-phpcpd
 module.exports = {
 	options: {
 		ignoreExitCode: true,
