@@ -174,8 +174,6 @@ Each of the programming language build targets (`build:css`, `build:js` and `bui
 
 The default CSS dependencies are _normalize.css_ (to provide a normalization of styles across all modern browsers), _Bourbon_ (Sass framework of mixins) and _Neat_ (Sass grid layout for _Bourbon_).
 
-There is a instance of _Genericons_ that is handled as part of the CSS dependencies, though it's not yet handled by Bower.
-
 The default JavaScript dependencies are _fitvids_ for adjusting videos to fit the available size, _sidr_ for mobile navigation and a jQuery plugin for adding keyboard accessibility to the non-mobile navigation menu.
 
 The default PHP dependencies, listed in `composer.json` are pulled in via the `composer task` into `assets/composer/` are the _Hybrid Core_ framework and the _Theme Hook Alliance_ library. Each time the `build:dependencies:php` task is run, the old instances of these dependencies are deleted and the new versions are copied into the right place in the `theme/` directory.
