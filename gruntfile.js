@@ -68,8 +68,13 @@ module.exports = function( grunt ) {
 		addtextdomain: 'grunt-wp-i18n',
 		scsslint: 'grunt-scss-lint',
 		makepot: 'grunt-wp-i18n',
+<<<<<<< HEAD
 		wpcss: 'grunt-wp-css',
 		usebanner: 'grunt-banner',
+=======
+		wpcss: 'grunt-wp-css'
+	})({
+>>>>>>> develop
 		loadTasks: project.paths.tasks
 	});
 };

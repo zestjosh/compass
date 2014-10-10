@@ -1,3 +1,4 @@
+// https://github.com/brandonramirez/grunt-jsonlint
 module.exports = {
 	all: {
 		src: [

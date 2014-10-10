@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7c0b32d519614ab1be15b81a11525c06",
+    "hash": "ca8170d7c10fb59e5f0b9716b72d3cf6",
     "packages": [
         {
             "name": "justintadlock/hybrid-core",
@@ -82,21 +82,13 @@
             "time": "2014-09-13 04:43:40"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
         "zamoose/themehookalliance": 20
     },
     "prefer-stable": false,
-    "platform": [
-
-    ],
-    "platform-dev": [
-
-    ]
+    "platform": [],
+    "platform-dev": []
 }

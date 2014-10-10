@@ -1,3 +1,4 @@
+// https://github.com/gruntjs/grunt-contrib-copy
 module.exports = {
 	css: {
 		files: [
@@ -16,9 +17,7 @@ module.exports = {
 			{
 				expand: true,
 				flatten: true,
-				src: [
-					'<%= paths.assets %>genericons/css/*'
-				],
+				src: [],
 				dest: '<%= paths.theme %>css/',
 				filter: 'isFile'
 			}
@@ -29,9 +28,7 @@ module.exports = {
 			{
 				expand: true,
 				flatten: true,
-				src: [
-					'<%= paths.assets %>genericons/font/*'
-				],
+				src: [],
 				dest: '<%= paths.theme %>font/'
 			}
 		]

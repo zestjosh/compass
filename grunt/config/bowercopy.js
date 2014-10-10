@@ -1,3 +1,4 @@
+// https://github.com/timmywil/grunt-bowercopy
 module.exports = {
 	options: {
 		clean: true

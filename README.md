@@ -19,13 +19,10 @@ This documentation is by no means complete and will be expanded upon in the near
     ├── assets
     │   ├── bower (added by build task)
     │   ├── composer (added by build task)
-    │   ├── flagship
-    │   │   ├── images
-    │   │   ├── js
-    │   │   └── scss
-    │   └── genericons
-    │       ├── css
-    │       └── font
+    │   └── flagship
+    │       ├── images
+    │       ├── js
+    │       └── scss
     ├── dist (added by package task)
     ├── grunt
     │   ├── config
@@ -195,7 +192,7 @@ The building of the CSS is made up of several small tasks that do incremental ch
 
 ### Build Font (`grunt build:font`)
 
-This is a simple task - it copies the _Genericons_ icon fonts from the `assets/genericons` directory into the `theme/font` directory so it can be referenced by the `@font-face` rule that appears in the generated `style.css`.
+This is a simple task - it copies any fonts from the a specified assets directory into the `theme/font` directory so it can be referenced by the `@font-face` rule that appears in the generated `style.css`.
 
 ### Build Images (`grunt build:images`)
 

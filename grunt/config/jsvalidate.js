@@ -1,3 +1,4 @@
+// https://github.com/ariya/grunt-jsvalidate
 module.exports = {
 	options: {
 		verbose: true

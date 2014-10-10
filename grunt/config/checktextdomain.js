@@ -1,3 +1,4 @@
+// https://github.com/stephenharris/grunt-checktextdomain
 module.exports = {
 	options: {
 		text_domain: '<%= pkg.theme.textdomain %>',
