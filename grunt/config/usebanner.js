@@ -17,13 +17,13 @@ module.exports = {
 				'*/\n',
 			linebreak: true
 		},
-        files: [
-            {
-                cwd    : '<%= paths.tmp %>',
-                src    : '*.css',
-                dest   : '<%= paths.tmp %>',
-                expand : true
-            }
-        ]
+		files: [
+			{
+				cwd: '<%= paths.tmp %>',
+				src: '*.css',
+				dest: '<%= paths.tmp %>',
+				expand: true
+			}
+		]
 	}
 };
