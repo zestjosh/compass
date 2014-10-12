@@ -14,7 +14,9 @@ build:
   - 'build:dependencies:js'
   - 'build:dependencies:php'
 'build:dependencies:css':
+  - 'clean:css'
   - 'bowercopy:css'
+  - 'replace:genericons'
   - 'newer:copy:vendorcss'
 'build:dependencies:js':
   - 'bowercopy:js'
@@ -39,6 +41,7 @@ build:
   - 'newer:copy:css'
 # Build Fonts from source to production
 'build:font':
+  - 'clean:font'
   - 'newer:copy:font'
 # Optimise images from source to production
 'build:images':

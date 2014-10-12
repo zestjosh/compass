@@ -37,6 +37,30 @@ module.exports = {
 			}
 		]
 	},
+	genericons: {
+		options: {
+			patterns: [
+				{
+					// Change path to match theme font location.
+					match: /url\(\'/g,
+					replacement: 'url(\'..font/'
+				},
+				{
+					// Change path to match theme font location.
+					match: /url\(\"\.\//g,
+					replacement: 'url(\"..font/'
+				}
+			]
+		},
+		files: [
+			{
+				expand: true,
+				src: [
+					'<%= paths.bower %>genericons/genericons.css'
+				]
+			}
+		]
+	},
 	release: {
 		options: {
 			patterns: [

@@ -10,6 +10,7 @@ module.exports = {
 		files: {
 			bourbon: 'bourbon/dist',
 			neat: 'neat/app/assets/stylesheets',
+			genericons: 'genericons/genericons',
 			normalize: 'normalize.css/normalize.css'
 		}
 	},

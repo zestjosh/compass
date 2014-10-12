@@ -17,7 +17,9 @@ module.exports = {
 			{
 				expand: true,
 				flatten: true,
-				src: [],
+				src: [
+					'<%= paths.bower %>genericons/genericons.css'
+				],
 				dest: '<%= paths.theme %>css/',
 				filter: 'isFile'
 			}
@@ -28,7 +30,12 @@ module.exports = {
 			{
 				expand: true,
 				flatten: true,
-				src: [],
+				src: [
+					'<%= paths.bower %>genericons/Genericons.eot',
+					'<%= paths.bower %>genericons/Genericons.svg',
+					'<%= paths.bower %>genericons/Genericons.ttf',
+					'<%= paths.bower %>genericons/Genericons.woff'
+				],
 				dest: '<%= paths.theme %>font/'
 			}
 		]
