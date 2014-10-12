@@ -38,9 +38,9 @@
 
 		<p class="entry-meta">
 			<?php hybrid_post_format_link(); ?>
-			<span <?php hybrid_attr( 'entry-author' ); ?>><?php the_author_posts_link(); ?></span>
-			<time <?php hybrid_attr( 'entry-published' ); ?>><?php echo get_the_date(); ?></time>
-			<?php compass_comments_link(); ?>
+			<?php flagship_entry_author(); ?>
+			<?php flagship_entry_published(); ?>
+			<?php flagship_entry_comments_link(); ?>
 			<?php edit_post_link(); ?>
 		</p><!-- .entry-meta -->
 
