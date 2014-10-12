@@ -57,26 +57,6 @@ function compass_do_sticky_banner() {
 	<?php
 }
 
-/**
- * Outputs a formatted comments popup link.
- *
- * @since  1.0.0
- * @access public
- * @param  string  $slug     The slug/ID of the element (e.g., 'sidebar').
- * @param  string  $context  A specific context (e.g., 'primary').
- * @return void
- */
-function compass_comments_link( $post_id = null ) {
-	$comment  = __( 'Comment', 'compass' );
-	$comments = __( 'Comments', 'compass' );
-	$disabled = __( 'Comments Disabled', 'compass' );
-
-	$zero = number_format_i18n( 0 ) . ' ' . $comments;
-	$one  = number_format_i18n( 1 ) . ' ' . $comments;
-
-	comments_popup_link( $zero, $one, '% '. $comments, 'comments-link', $disabled );
-}
-
 add_action( 'wp_footer', 'compass_footer_creds' );
 /**
  * Display footer credits for the theme.
