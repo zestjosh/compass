@@ -172,7 +172,7 @@ The build task is a virtual task made up of cleaning the previous build files an
 
 Each of the programming language build targets (`build:css`, `build:js` and `build:php`) have dependencies on third-party code. This code is pulled in via Bower or Composer. The Bower dependencies are listed in `bower.json` in the project root, and then moved to the right place in the `assets/bower/` directory via targets in the `bowercopy` task (see `grunt/config/bowercopy.js`).
 
-The default CSS dependencies are _normalize.css_ (to provide a normalization of styles across all modern browsers), _normalize.css_ (A lightweight set of font icons from Automattic), _Bourbon_ (Sass framework of mixins) and _Neat_ (Sass grid layout for _Bourbon_).
+The default CSS dependencies are _normalize.css_ (to provide a normalization of styles across all modern browsers), _Genericons_ (A lightweight set of font icons from Automattic), _Bourbon_ (Sass framework of mixins) and _Neat_ (Sass grid layout for _Bourbon_).
 
 The default JavaScript dependencies are _fitvids_ for adjusting videos to fit the available size, _sidr_ for mobile navigation and a jQuery plugin for adding keyboard accessibility to the non-mobile navigation menu.
 
