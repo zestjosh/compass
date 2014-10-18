@@ -67,7 +67,7 @@ If you don't get a version number, then you can add the path with:
 export PATH="$PATH:~/path/to/your/composer/bin/"
 ~~~
 
-After Composer is installed, you can optionally add some global (system-wide) packages that can be used across multiple projects for analyzng your PHP code. None of the following packages are used directly within this project, but you may wish to experiment with them later.
+After Composer is installed, you can optionally add some global (system-wide) packages that can be used across multiple projects for analyzing your PHP code. None of the following packages are used directly within this project, but you may wish to experiment with them later.
 
 Run the following commands in a command line terminal:
 
@@ -77,8 +77,35 @@ composer global require "phpmd/phpmd=*"
 composer global require "phpunit/phpunit=*"
 composer global require "sebastian/phpcpd=*"
 composer global require "sebastian/phpdcd=*"
-composer config -g -e # add ,"minimum-stability":"dev"
-composer global require 'halleck45/phpmetrics=@dev'
+~~~
+
+The final system-wide composer package that you should consider adding requires that you make a change to your global composer config file. Run the following command to open up the config file in your default code editor:
+
+~~~sh
+composer config -g -e
+~~~
+
+Once you have the file open, you need to add the following code OUTSIDE the config brackets:
+
+~~~sh
+"minimum-stability": "dev",
+"prefer-stable": true
+~~~
+
+If you're using the default composer configuration, your global config file will probably look something like this after making the necessary changes:
+
+~~~sh
+{
+    "config": {},
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+~~~
+
+Your file could vary slightly, depending on whether or not you've made other changes to the global configuration in the past. Once you've saved the new config, you'll need to run one final command to install the last system-wide package:
+
+~~~sh
+composer global require "halleck45/phpmetrics=@dev"
 ~~~
 
 ### PHP_CodeSniffer
