@@ -8,6 +8,12 @@ module.exports = {
 			destPrefix: '<%= paths.bower %>'
 		},
 		files: {
+<<<<<<< HEAD
+=======
+			bourbon: 'bourbon/dist',
+			neat: 'neat/app/assets/stylesheets',
+			genericons: 'genericons/genericons',
+>>>>>>> develop
 			normalize: 'normalize.css/normalize.css'
 		}
 	},

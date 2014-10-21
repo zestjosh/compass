@@ -22,9 +22,9 @@
 		<h1 <?php hybrid_attr( 'entry-title' ); ?>><?php single_post_title(); ?></h1>
 
 		<p class="entry-meta">
-			<span <?php hybrid_attr( 'entry-author' ); ?>><?php the_author_posts_link(); ?></span>
-			<time <?php hybrid_attr( 'entry-published' ); ?>><?php echo get_the_date(); ?></time>
-			<?php compass_comments_link(); ?>
+			<?php flagship_entry_author(); ?>
+			<?php flagship_entry_published(); ?>
+			<?php flagship_entry_comments_link(); ?>
 			<?php edit_post_link(); ?>
 		</p><!-- .entry-meta -->
 

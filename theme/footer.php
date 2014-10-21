@@ -13,27 +13,39 @@
  */
 ?>
 
-	<?php tha_footer_before(); ?>
+		<?php tha_footer_before(); ?>
 
-	<footer <?php hybrid_attr( 'footer' ); ?>>
-
-		<div class="wrap">
+		<footer <?php hybrid_attr( 'footer' ); ?>>
 
 			<?php tha_footer_top(); ?>
 
-			<?php wp_footer(); ?>
+			<div class="wrap">
+
+				<p class="credit">
+					<?php
+					printf(
+						// Translators: 1 is current year, 2 is site name/link, 3 is WordPress name/link, and 4 is theme name/link.
+						__( 'Copyright &#169; %1$s %2$s. Powered by %3$s and %4$s.', 'compass' ),
+						date_i18n( 'Y' ),
+						hybrid_get_site_link(),
+						hybrid_get_wp_link(),
+						hybrid_get_theme_link()
+					);
+					?>
+				</p><!-- .credit -->
+
+			</div><!-- .wrap -->
 
 			<?php tha_footer_bottom(); ?>
 
-		</div><!-- .wrap -->
+		</footer><!-- .footer -->
 
-	</footer><!-- .footer -->
+		<?php tha_footer_after(); ?>
 
-	<?php tha_footer_after(); ?>
+	</div><!-- .site-container -->
 
-</div><!-- .site-container -->
-
-<?php tha_body_bottom(); ?>
+	<?php tha_body_bottom(); ?>
+	<?php wp_footer(); ?>
 
 </body>
 </html>

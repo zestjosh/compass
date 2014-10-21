@@ -30,7 +30,7 @@
 
 	<footer class="entry-footer">
 		<p class="entry-meta">
-			<time <?php hybrid_attr( 'entry-published' ); ?>><?php echo get_the_date(); ?></time>
+			<?php flagship_entry_published(); ?>
 			<?php edit_post_link(); ?>
 		</p>
 	</footer><!-- .entry-footer -->

@@ -26,7 +26,7 @@ input:focus[type="submit"],
 .button:hover,
 .button:focus {
 	background-color: $base-button-background-hover-color;
-	color: $base-button-font-color;
+	color: $base-button-font-hover-color;
 	display: inline-block;
 }
 

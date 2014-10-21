@@ -1,3 +1,3 @@
 # Compass
 
-### A WordPress Starter Theme Using Hybrid Core, Bourbon, Neat, and the Theme Hook Alliance.
+### The most advanced WordPress Starter Theme ever created. Built Using Hybrid Core, Bourbon, Neat, and the Theme Hook Alliance.
