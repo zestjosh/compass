@@ -60,29 +60,15 @@ module.exports = function( grunt ) {
 	require( 'load-grunt-config' )(grunt, {
 		configPath: require( 'path' ).join( process.cwd(), project.paths.config ),
 		data: project,
-<<<<<<< HEAD
-		loadGruntTasks: false
-	});
-
-	// Register Tasks
-	require( 'jit-grunt' )(grunt, {
-		addtextdomain: 'grunt-wp-i18n',
-		scsslint: 'grunt-scss-lint',
-		makepot: 'grunt-wp-i18n',
-		wpcss: 'grunt-wp-css',
-		usebanner: 'grunt-banner'
-	})({
-		loadTasks: project.paths.tasks
-=======
 		jitGrunt: {
 			staticMappings: {
 				addtextdomain: 'grunt-wp-i18n',
 				scsslint: 'grunt-scss-lint',
 				makepot: 'grunt-wp-i18n',
-				wpcss: 'grunt-wp-css'
+				wpcss: 'grunt-wp-css',
+				usebanner: 'grunt-banner'
 			},
 			loadTasks: project.paths.tasks
 		}
->>>>>>> develop
 	});
 };
