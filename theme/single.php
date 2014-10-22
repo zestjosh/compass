@@ -29,6 +29,8 @@
 
 				<?php hybrid_get_content_template(); ?>
 
+				<?php get_template_part( 'misc-templates/author-box' ); ?>
+
 				<?php get_template_part( 'misc-templates/loop-nav' ); ?>
 
 				<?php comments_template( '', true ); ?>
