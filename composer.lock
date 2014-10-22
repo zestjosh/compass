@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "justintadlock/hybrid-core",
-            "version": "2.0.2",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/justintadlock/hybrid-core.git",
-                "reference": "c136a0742d34ca0c0ff01958ec37855e8d2c8e8c"
+                "reference": "e7e20a4d1aad1a17e07da23c7c04fc5947528c0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justintadlock/hybrid-core/zipball/c136a0742d34ca0c0ff01958ec37855e8d2c8e8c",
-                "reference": "c136a0742d34ca0c0ff01958ec37855e8d2c8e8c",
+                "url": "https://api.github.com/repos/justintadlock/hybrid-core/zipball/e7e20a4d1aad1a17e07da23c7c04fc5947528c0b",
+                "reference": "e7e20a4d1aad1a17e07da23c7c04fc5947528c0b",
                 "shasum": ""
             },
             "type": "library",
@@ -42,7 +42,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2014-08-12 14:41:22"
+            "time": "2014-10-20 22:12:17"
         },
         {
             "name": "zamoose/themehookalliance",
