@@ -22,7 +22,7 @@
 		<div class="author-info">
 
 			<h3 class="author-box-title">
-				<?php _e( 'Written by ', 'flagship-author-box' ); ?>
+				<?php _e( 'Written by ', 'compass' ); ?>
 				<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
 					<span class="name" itemprop="name"><?php the_author(); ?></span>
 				</a>
