@@ -26,6 +26,7 @@ build:
   - 'newer:copy:hybridcore'
   - 'clean:flagshiplibrary'
   - 'newer:copy:flagshiplibrary'
+  - 'replace:flagshiplibrarytextdomain'
   - 'clean:themehookalliance'
   - 'newer:copy:themehookalliance'
 # Build CSS from Scss to production
