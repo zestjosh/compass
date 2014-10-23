@@ -79,25 +79,6 @@ module.exports = {
 			}
 		]
 	},
-	// Update the textdomain used in the flagship library files.
-	flagshiplibrarytextdomain: {
-		options: {
-			patterns: [
-				{
-					match: /flagship-library/g,
-					replacement: '<%= pkg.name %>'
-				}
-			]
-		},
-		files: [
-			{
-				expand: true,
-				src: [
-					'<%= paths.theme %>includes/vendor/flagship-library/**/*.php'
-				]
-			}
-		]
-	},
 	// Useful when forking this project into a new project
 	packagename: {
 		options: {

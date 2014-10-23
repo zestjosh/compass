@@ -11,5 +11,15 @@ module.exports = {
 				'!<%= paths.hybridCore %>**/*.php'
 			]
 		}
+	},
+	flagshiplibrary: {
+		options: {
+			updateDomains: ['flagship-library']
+		},
+		files: {
+			src: [
+				'<%= paths.theme %>includes/vendor/flagship-library/**/*.php'
+			]
+		}
 	}
 };

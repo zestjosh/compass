@@ -26,7 +26,6 @@ build:
   - 'newer:copy:hybridcore'
   - 'clean:flagshiplibrary'
   - 'newer:copy:flagshiplibrary'
-  - 'replace:flagshiplibrarytextdomain'
   - 'clean:themehookalliance'
   - 'newer:copy:themehookalliance'
 # Build CSS from Scss to production
@@ -59,7 +58,7 @@ build:
   - 'newer:jsvalidate:theme'
 # Build internationalisation features
 'build:i18n':
-  # - 'addtextdomain'
+  - 'addtextdomain:flagshiplibrary'
   - 'makepot'
 # Check health of the project
 check:
