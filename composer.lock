@@ -4,8 +4,46 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ca8170d7c10fb59e5f0b9716b72d3cf6",
+    "hash": "c63f10f75db22e9396f71ef197bd0ea9",
     "packages": [
+        {
+            "name": "flagshipwp/flagship-library",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlagshipWP/flagship-library.git",
+                "reference": "53f99d28e981bb407098ac5ef09571d267b02b96"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlagshipWP/flagship-library/zipball/53f99d28e981bb407098ac5ef09571d267b02b96",
+                "reference": "53f99d28e981bb407098ac5ef09571d267b02b96",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "flagship-library.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Neu",
+                    "email": "rob@flagshipwp.com",
+                    "homepage": "http://flagshipwp.com"
+                }
+            ],
+            "description": "A helpful libray of functions and classes for Flagship themes.",
+            "homepage": "https://github.com/FlagshipWP/flagship-library",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2014-10-23 04:49:20"
+        },
         {
             "name": "justintadlock/hybrid-core",
             "version": "2.0.3",
@@ -86,6 +124,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "flagshipwp/flagship-library": 20,
         "zamoose/themehookalliance": 20
     },
     "prefer-stable": false,
