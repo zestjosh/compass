@@ -24,6 +24,8 @@ build:
   - 'composer:install'
   - 'clean:hybridcore'
   - 'newer:copy:hybridcore'
+  - 'clean:flagshiplibrary'
+  - 'newer:copy:flagshiplibrary'
   - 'clean:themehookalliance'
   - 'newer:copy:themehookalliance'
 # Build CSS from Scss to production
