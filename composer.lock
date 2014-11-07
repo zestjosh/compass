@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FlagshipWP/flagship-library.git",
-                "reference": "7f93cf1eb8b886505d9db206274af6fe57c22cc9"
+                "reference": "85dd6711160747bf21b640ddd123334f7c8675c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FlagshipWP/flagship-library/zipball/7f93cf1eb8b886505d9db206274af6fe57c22cc9",
-                "reference": "7f93cf1eb8b886505d9db206274af6fe57c22cc9",
+                "url": "https://api.github.com/repos/FlagshipWP/flagship-library/zipball/85dd6711160747bf21b640ddd123334f7c8675c0",
+                "reference": "85dd6711160747bf21b640ddd123334f7c8675c0",
                 "shasum": ""
             },
             "type": "library",
@@ -42,7 +42,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2014-10-23 06:15:39"
+            "time": "2014-11-07 21:33:36"
         },
         {
             "name": "justintadlock/hybrid-core",
@@ -88,20 +88,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zamoose/themehookalliance.git",
-                "reference": "f4950c6343e85b105c0c78a65e90df2f1476e6c6"
+                "reference": "c66f3a7aa17d3f409d875d08e76cb344f2de6683"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zamoose/themehookalliance/zipball/f4950c6343e85b105c0c78a65e90df2f1476e6c6",
-                "reference": "f4950c6343e85b105c0c78a65e90df2f1476e6c6",
+                "url": "https://api.github.com/repos/zamoose/themehookalliance/zipball/c66f3a7aa17d3f409d875d08e76cb344f2de6683",
+                "reference": "c66f3a7aa17d3f409d875d08e76cb344f2de6683",
                 "shasum": ""
             },
             "type": "library",
-            "autoload": {
-                "files": [
-                    "tha-theme-hooks.php"
-                ]
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0+"
@@ -117,7 +112,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2014-09-13 04:43:40"
+            "time": "2014-11-06 04:22:41"
         }
     ],
     "packages-dev": [],
