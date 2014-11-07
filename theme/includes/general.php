@@ -23,7 +23,7 @@ function compass_register_image_sizes() {
 	set_post_thumbnail_size( 175, 130, true );
 
 	// Add the 'compass-full' image size.
-	add_image_size( 'compass-full', 1025, 500, false );
+	add_image_size( 'compass-full', 1025, 500, true );
 }
 
 add_filter( 'excerpt_length', 'compass_excerpt_length' );
