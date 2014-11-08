@@ -14,7 +14,7 @@
 require_once( trailingslashit( get_template_directory() ) . 'hybrid-core/hybrid.php' );
 new Hybrid();
 
-add_action( 'after_setup_theme', 'compass_setup', 5 );
+add_action( 'after_setup_theme', 'compass_setup', 10 );
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -84,7 +84,7 @@ function compass_setup() {
 	add_theme_support( 'flagship-footer-widgets', 3 );
 }
 
-add_action( 'after_setup_theme', 'compass_includes' );
+add_action( 'after_setup_theme', 'compass_includes', 10 );
 /**
  * Load all required theme files.
  *
@@ -95,8 +95,9 @@ function compass_includes() {
 	// Set the includes directories.
 	$includes_dir = get_template_directory() . '/includes';
 
-	// Load the main init file in the library directory.
-	require_once $includes_dir . '/library/init.php';
+	// Load the main file in the Flagship library directory.
+	require_once $includes_dir . '/vendor/flagship-library/flagship-library.php';
+	new Flagship_Library;
 
 	// Load all PHP files in the vendor directory.
 	require_once $includes_dir . '/vendor/tha-theme-hooks.php';

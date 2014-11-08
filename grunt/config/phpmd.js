@@ -1,3 +1,4 @@
+// https://github.com/alappe/grunt-phpmd
 module.exports = {
 	options: {
 		reportFormat: 'text',

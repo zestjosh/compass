@@ -1,3 +1,4 @@
+// https://github.com/tvooo/grunt-stylestats
 module.exports = {
 	options: {
 		gzippedsize: true

@@ -33,8 +33,8 @@
 	<footer class="entry-footer">
 		<p class="entry-meta">
 			<?php hybrid_post_format_link(); ?>
-			<span <?php hybrid_attr( 'entry-author' ); ?>><?php the_author_posts_link(); ?></span>
-			<time <?php hybrid_attr( 'entry-published' ); ?>><?php echo get_the_date(); ?></time>
+			<?php flagship_entry_author(); ?>
+			<?php flagship_entry_published(); ?>
 			<?php edit_post_link(); ?>
 			<?php hybrid_post_terms( array( 'taxonomy' => 'category', ) ); ?>
 			<?php hybrid_post_terms( array( 'taxonomy' => 'post_tag', ) ); ?>

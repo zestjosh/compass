@@ -1,3 +1,4 @@
+// https://github.com/SaschaGalley/grunt-phpcs
 module.exports = {
 	options: {
 		standard: 'WordPress',

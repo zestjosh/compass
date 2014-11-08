@@ -23,7 +23,7 @@ function compass_register_image_sizes() {
 	set_post_thumbnail_size( 175, 130, true );
 
 	// Add the 'compass-full' image size.
-	add_image_size( 'compass-full', 1025, 500, false );
+	add_image_size( 'compass-full', 1025, 500, true );
 }
 
 add_filter( 'excerpt_length', 'compass_excerpt_length' );
@@ -57,19 +57,11 @@ function compass_do_sticky_banner() {
 	<?php
 }
 
-add_action( 'wp_footer', 'compass_footer_creds' );
 /**
  * Display footer credits for the theme.
  *
- * @since   1.0.0
- * @return  void
+ * @since      1.0.0
+ * @return     void
+ * @deprecated This was moved into the footer.php template and will be deleted.
  */
-function compass_footer_creds() {
-	echo '<p class="credit">';
-		printf(
-			// Translators: 1 is current year, 2 is site name/link, 3 is WordPress name/link, and 4 is theme name/link.
-			__( 'Copyright &#169; %1$s %2$s. Powered by %3$s and %4$s.', 'compass' ),
-				date_i18n( 'Y' ), hybrid_get_site_link(), hybrid_get_wp_link(), hybrid_get_theme_link()
-			);
-	echo '</p><!-- .credit -->';
-}
+function compass_footer_creds() {}

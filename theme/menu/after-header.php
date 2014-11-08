@@ -22,16 +22,18 @@
 			?></button>
 		</span><!-- .menu-toggle -->
 
-		<?php wp_nav_menu(
+		<?php
+		wp_nav_menu(
 			array(
 				'theme_location'  => 'after-header',
 				'container'       => '',
 				'menu_id'         => 'after-header',
 				'menu_class'      => 'nav-menu after-header',
 				'fallback_cb'     => '',
-				'items_wrap'      => '<div class="wrap"><ul id="%s" class="%s">%s</ul></div>',
+				'items_wrap'      => '<div ' . hybrid_get_attr( 'wrap', 'after-header' ) . '><ul id="%s" class="%s">%s</ul></div>',
 			)
-		); ?>
+		);
+		?>
 
 	</nav><!-- #menu-after-header -->
 

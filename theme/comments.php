@@ -18,27 +18,23 @@ if ( post_password_required() || ( ! have_comments() && ! comments_open() && ! p
 
 <?php tha_comments_before(); ?>
 
-<section id="comments-template">
+<section id="comments" class="comments-area">
 
 	<?php if ( have_comments() ) : ?>
 
-		<div id="comments">
+		<h3 class="comments-number" id="comments-number"><?php comments_number(); ?></h3>
 
-			<h3 class="comments-number" id="comments-number"><?php comments_number(); ?></h3>
+		<ol class="comment-list">
+			<?php wp_list_comments(
+				array(
+					'style'        => 'ol',
+					'callback'     => 'hybrid_comments_callback',
+					'end-callback' => 'hybrid_comments_end_callback',
+				)
+			); ?>
+		</ol><!-- .comment-list -->
 
-			<ol class="comment-list">
-				<?php wp_list_comments(
-					array(
-						'style'        => 'ol',
-						'callback'     => 'hybrid_comments_callback',
-						'end-callback' => 'hybrid_comments_end_callback',
-					)
-				); ?>
-			</ol><!-- .comment-list -->
-
-			<?php locate_template( array( 'misc-templates/comments-nav.php' ), true ); ?>
-
-		</div><!-- #comments-->
+		<?php locate_template( array( 'misc-templates/comments-nav.php' ), true ); ?>
 
 	<?php endif; // End check for comments. ?>
 
@@ -46,7 +42,7 @@ if ( post_password_required() || ( ! have_comments() && ! comments_open() && ! p
 
 	<?php comment_form(); ?>
 
-</section><!-- #comments-template -->
+</section><!-- #comments -->
 
 <?php
 tha_comments_after();

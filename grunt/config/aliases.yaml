@@ -14,7 +14,9 @@ build:
   - 'build:dependencies:js'
   - 'build:dependencies:php'
 'build:dependencies:css':
+  - 'clean:css'
   - 'bowercopy:css'
+  - 'replace:genericons'
   - 'newer:copy:vendorcss'
 'build:dependencies:js':
   - 'bowercopy:js'
@@ -22,6 +24,8 @@ build:
   - 'composer:install'
   - 'clean:hybridcore'
   - 'newer:copy:hybridcore'
+  - 'clean:flagshiplibrary'
+  - 'newer:copy:flagshiplibrary'
   - 'clean:themehookalliance'
   - 'newer:copy:themehookalliance'
 # Build CSS from Scss to production
@@ -39,6 +43,7 @@ build:
   - 'newer:copy:css'
 # Build Fonts from source to production
 'build:font':
+  - 'clean:font'
   - 'newer:copy:font'
 # Optimise images from source to production
 'build:images':
@@ -53,7 +58,7 @@ build:
   - 'newer:jsvalidate:theme'
 # Build internationalisation features
 'build:i18n':
-  # - 'addtextdomain'
+  - 'addtextdomain:flagshiplibrary'
   - 'makepot'
 # Check health of the project
 check:

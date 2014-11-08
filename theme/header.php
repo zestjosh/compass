@@ -24,7 +24,7 @@
 
 	<?php tha_body_top(); ?>
 
-	<div id="site-container" class="site-container">
+	<div <?php hybrid_attr( 'site-container' ); ?>>
 
 		<div class="skip-link">
 			<a href="#content" class="button screen-reader-text">
@@ -36,7 +36,7 @@
 
 		<header <?php hybrid_attr( 'header' ); ?>>
 
-			<div class="wrap">
+			<div <?php hybrid_attr( 'wrap', 'header' ); ?>>
 
 				<?php tha_header_top(); ?>
 

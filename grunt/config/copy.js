@@ -1,3 +1,4 @@
+// https://github.com/gruntjs/grunt-contrib-copy
 module.exports = {
 	css: {
 		files: [
@@ -17,7 +18,7 @@ module.exports = {
 				expand: true,
 				flatten: true,
 				src: [
-					'<%= paths.assets %>genericons/css/*'
+					'<%= paths.bower %>genericons/genericons.css'
 				],
 				dest: '<%= paths.theme %>css/',
 				filter: 'isFile'
@@ -30,7 +31,10 @@ module.exports = {
 				expand: true,
 				flatten: true,
 				src: [
-					'<%= paths.assets %>genericons/font/*'
+					'<%= paths.bower %>genericons/Genericons.eot',
+					'<%= paths.bower %>genericons/Genericons.svg',
+					'<%= paths.bower %>genericons/Genericons.ttf',
+					'<%= paths.bower %>genericons/Genericons.woff'
 				],
 				dest: '<%= paths.theme %>font/'
 			}
@@ -43,6 +47,16 @@ module.exports = {
 				expand: true,
 				src: ['**/*'],
 				dest: '<%= paths.hybridCore %>'
+			}
+		]
+	},
+	flagshiplibrary: {
+		files: [
+			{
+				cwd: '<%= paths.composer %>flagshipwp/flagship-library',
+				expand: true,
+				src: ['**/*'],
+				dest: '<%= paths.theme %>includes/vendor/flagship-library'
 			}
 		]
 	},

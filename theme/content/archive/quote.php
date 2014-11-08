@@ -24,11 +24,11 @@
 	<footer class="entry-footer">
 		<p class="entry-meta">
 			<?php hybrid_post_format_link(); ?>
-			<time <?php hybrid_attr( 'entry-published' ); ?>><?php echo get_the_date(); ?></time>
+			<?php flagship_entry_published(); ?>
 			<a class="entry-permalink" href="<?php the_permalink(); ?>" rel="bookmark" itemprop="url"><?php _e( 'Permalink', 'compass' ); ?></a>
-			<?php comments_popup_link( number_format_i18n( 0 ), number_format_i18n( 1 ), '%', 'comments-link', '' ); ?>
+			<?php flagship_entry_comments_link(); ?>
 			<?php edit_post_link(); ?>
-		</p>
+		</p><!-- .entry-meta -->
 	</footer><!-- .entry-footer -->
 
 	<?php tha_entry_bottom(); ?>

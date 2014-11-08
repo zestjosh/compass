@@ -19,7 +19,7 @@
 
 <?php get_header(); ?>
 
-<div id="site-inner" class="site-inner">
+<div <?php hybrid_attr( 'site-inner' ); ?>>
 
 	<?php hybrid_get_menu( 'breadcrumbs' ); ?>
 

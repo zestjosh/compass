@@ -1,3 +1,4 @@
+// https://github.com/ahmednuaman/grunt-scss-lint
 module.exports = {
 	options: {
 		config: '.scss-lint.yml',

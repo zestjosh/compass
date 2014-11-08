@@ -1,3 +1,4 @@
+// https://github.com/gruntjs/grunt-contrib-clean
 module.exports = {
 	bower: {
 		src: [
@@ -32,6 +33,11 @@ module.exports = {
 	hybridcore: {
 		src: [
 			'<%= paths.hybridCore %>'
+		]
+	},
+	flagshiplibrary: {
+		src: [
+			'<%= paths.theme %>includes/vendor/flagship-library'
 		]
 	},
 	themehookalliance: {

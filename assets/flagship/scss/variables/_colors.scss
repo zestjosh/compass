@@ -15,6 +15,7 @@ $medium-fog:  #e0e0e0;
 $light-fog:   #f5f5f5;
 $white:       #fff;
 $seafoam:     #33b787;
+$green:       #00a66c;
 
 // Global Base Colors
 //------------------------------------------------------------------------------
@@ -22,12 +23,12 @@ $base-background-color:                $light-fog;
 $base-font-color:                      $dark-gray;
 $base-accent-color:                    $light-gray;
 $base-heading-color:                   $off-black;
-$base-heading-hover-color:             $seafoam;
+$base-heading-hover-color:             $green;
 $base-blockquote-color:                $medium-gray;
-$base-link-color:                      $seafoam;
-$base-link-hover-color:                lighten($base-link-color, 40);
-$base-button-background-color:         $base-link-color;
-$base-button-background-hover-color:   lighten($base-link-color, 10);
+$base-link-color:                      $green;
+$base-link-hover-color:                lighten($seafoam, 10);
+$base-button-background-color:         $seafoam;
+$base-button-background-hover-color:   lighten($base-button-background-color, 10);
 $base-button-font-color:               $white;
 $base-button-font-hover-color:         $white;
 $base-border-color:                    $medium-fog;
@@ -67,7 +68,7 @@ $after-header-border-color:      $base-border-color;
 $after-header-link-color:        lighten($nav-link-color, 10);
 $after-header-link-hover-color:  $base-link-color;
 
-$menu-button-background-color:   $base-link-color;
+$menu-button-background-color:   $base-button-background-color;
 $menu-button-link-color:         $white;
 $sidr-background-color:          lighten($off-black, 3);
 $sidr-border-color:              rgba(255, 255, 255, .1);
@@ -116,6 +117,11 @@ $corner-ribbon-background-color:    $base-accent-color;
 $corner-ribbon-font-color:          $white;
 $gallery-caption-background-color:  $off-black;
 $gallery-caption-font-color:        $white;
+
+//* Author Box Colors
+//------------------------------------------------------------------------------
+$author-box-background-color: $white;
+$author-box-border-color:     $base-border-color;
 
 //* Icon Colors
 //------------------------------------------------------------------------------

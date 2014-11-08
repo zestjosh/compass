@@ -1,3 +1,4 @@
+// https://github.com/gruntjs/grunt-contrib-compress
 module.exports = {
 	dist: {
 		options: {

@@ -1,3 +1,4 @@
+// https://github.com/outaTiME/grunt-replace
 module.exports = {
 	style: {
 		options: {
@@ -32,6 +33,30 @@ module.exports = {
 				expand: true,
 				src: [
 					'<%= paths.tmp %>style.css'
+				]
+			}
+		]
+	},
+	genericons: {
+		options: {
+			patterns: [
+				{
+					// Change path to match theme font location.
+					match: /url\(\'/g,
+					replacement: 'url(\'..font/'
+				},
+				{
+					// Change path to match theme font location.
+					match: /url\(\"\.\//g,
+					replacement: 'url(\"..font/'
+				}
+			]
+		},
+		files: [
+			{
+				expand: true,
+				src: [
+					'<%= paths.bower %>genericons/genericons.css'
 				]
 			}
 		]

@@ -11,7 +11,7 @@ Compass will revolutionize your theme development workflow by removing all the g
 
 ## Project Development
 
-This documentation is by no means complete and will be expanded upon in the near future. In order to get up and running, you'll need to install a few key components. We've put together a screencast which will walk you through the setup process and we also have an entire pulic [forum dedicated to Compass](http://community.flagshipwp.com/category/themes/compass) where you can register and learn from other developers who are using it to build cool stuff.
+This documentation is by no means complete and will be expanded upon in the near future. In order to get up and running, you'll need to install a few key components. We've put together a screencast which will walk you through the setup process and we also have an entire pulic [forum dedicated to Compass](http://community.flagshipwp.com/category/compass) where you can register and learn from other developers who are using it to build cool stuff.
 
 ### Project Structure
 
@@ -19,13 +19,10 @@ This documentation is by no means complete and will be expanded upon in the near
     ├── assets
     │   ├── bower (added by build task)
     │   ├── composer (added by build task)
-    │   ├── flagship
-    │   │   ├── images
-    │   │   ├── js
-    │   │   └── scss
-    │   └── genericons
-    │       ├── css
-    │       └── font
+    │   └── flagship
+    │       ├── images
+    │       ├── js
+    │       └── scss
     ├── dist (added by package task)
     ├── grunt
     │   ├── config
@@ -70,7 +67,7 @@ If you don't get a version number, then you can add the path with:
 export PATH="$PATH:~/path/to/your/composer/bin/"
 ~~~
 
-After Composer is installed, you can optionally add some global (system-wide) packages that can be used across multiple projects for analyzng your PHP code. None of the following packages are used directly within this project, but you may wish to experiment with them later.
+After Composer is installed, you can optionally add some global (system-wide) packages that can be used across multiple projects for analyzing your PHP code. None of the following packages are used directly within this project, but you may wish to experiment with them later.
 
 Run the following commands in a command line terminal:
 
@@ -80,8 +77,35 @@ composer global require "phpmd/phpmd=*"
 composer global require "phpunit/phpunit=*"
 composer global require "sebastian/phpcpd=*"
 composer global require "sebastian/phpdcd=*"
-composer config -g -e # add ,"minimum-stability":"dev"
-composer global require 'halleck45/phpmetrics=@dev'
+~~~
+
+The final system-wide composer package that you should consider adding requires that you make a change to your global composer config file. Run the following command to open up the config file in your default code editor:
+
+~~~sh
+composer config -g -e
+~~~
+
+Once you have the file open, you need to add the following code OUTSIDE the config brackets:
+
+~~~sh
+"minimum-stability": "dev",
+"prefer-stable": true
+~~~
+
+If you're using the default composer configuration, your global config file will probably look something like this after making the necessary changes:
+
+~~~sh
+{
+    "config": {},
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+~~~
+
+Your file could vary slightly, depending on whether or not you've made other changes to the global configuration in the past. Once you've saved the new config, you'll need to run one final command to install the last system-wide package:
+
+~~~sh
+composer global require "halleck45/phpmetrics=@dev"
 ~~~
 
 ### PHP_CodeSniffer
@@ -175,9 +199,7 @@ The build task is a virtual task made up of cleaning the previous build files an
 
 Each of the programming language build targets (`build:css`, `build:js` and `build:php`) have dependencies on third-party code. This code is pulled in via Bower or Composer. The Bower dependencies are listed in `bower.json` in the project root, and then moved to the right place in the `assets/bower/` directory via targets in the `bowercopy` task (see `grunt/config/bowercopy.js`).
 
-The default CSS dependencies are _normalize.css_ (to provide a normalization of styles across all modern browsers), _Bourbon_ (Sass framework of mixins) and _Neat_ (Sass grid layout for _Bourbon_).
-
-There is a instance of _Genericons_ that is handled as part of the CSS dependencies, though it's not yet handled by Bower.
+The default CSS dependencies are _normalize.css_ (to provide a normalization of styles across all modern browsers), _Genericons_ (A lightweight set of font icons from Automattic), _Bourbon_ (Sass framework of mixins) and _Neat_ (Sass grid layout for _Bourbon_).
 
 The default JavaScript dependencies are _fitvids_ for adjusting videos to fit the available size, _sidr_ for mobile navigation and a jQuery plugin for adding keyboard accessibility to the non-mobile navigation menu.
 
@@ -200,7 +222,7 @@ The building of the CSS is made up of several small tasks that do incremental ch
 
 ### Build Font (`grunt build:font`)
 
-This is a simple task - it copies the _Genericons_ icon fonts from the `assets/genericons` directory into the `theme/font` directory so it can be referenced by the `@font-face` rule that appears in the generated `style.css`.
+This is a simple task - it copies any fonts from the a specified assets directory into the `theme/font` directory so it can be referenced by the `@font-face` rule that appears in the generated `style.css`.
 
 ### Build Images (`grunt build:images`)
 
