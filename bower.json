@@ -4,11 +4,6 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
-<<<<<<< HEAD
-=======
-    "bourbon": "~4.0.2",
-    "neat": "~1.7.0",
->>>>>>> develop
     "genericons": "Automattic/Genericons#master",
     "normalize.css": "~3.0.1",
     "fitvids": "~1.1.0",
