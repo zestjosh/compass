@@ -19,7 +19,7 @@
 
 			<?php tha_footer_top(); ?>
 
-			<div class="wrap">
+			<div <?php hybrid_attr( 'wrap', 'footer' ); ?>>
 
 				<p class="credit">
 					<?php

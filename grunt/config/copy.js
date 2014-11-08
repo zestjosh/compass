@@ -50,6 +50,16 @@ module.exports = {
 			}
 		]
 	},
+	flagshiplibrary: {
+		files: [
+			{
+				cwd: '<%= paths.composer %>flagshipwp/flagship-library',
+				expand: true,
+				src: ['**/*'],
+				dest: '<%= paths.theme %>includes/vendor/flagship-library'
+			}
+		]
+	},
 	themehookalliance: {
 		files: [
 			{

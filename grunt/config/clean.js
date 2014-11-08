@@ -35,6 +35,11 @@ module.exports = {
 			'<%= paths.hybridCore %>'
 		]
 	},
+	flagshiplibrary: {
+		src: [
+			'<%= paths.theme %>includes/vendor/flagship-library'
+		]
+	},
 	themehookalliance: {
 		src: [
 			'<%= paths.theme %>includes/vendor/tha-theme-hooks.php'

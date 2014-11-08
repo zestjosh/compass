@@ -4,20 +4,58 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ca8170d7c10fb59e5f0b9716b72d3cf6",
+    "hash": "c63f10f75db22e9396f71ef197bd0ea9",
     "packages": [
         {
-            "name": "justintadlock/hybrid-core",
-            "version": "2.0.2",
+            "name": "flagshipwp/flagship-library",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/justintadlock/hybrid-core.git",
-                "reference": "c136a0742d34ca0c0ff01958ec37855e8d2c8e8c"
+                "url": "https://github.com/FlagshipWP/flagship-library.git",
+                "reference": "85dd6711160747bf21b640ddd123334f7c8675c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justintadlock/hybrid-core/zipball/c136a0742d34ca0c0ff01958ec37855e8d2c8e8c",
-                "reference": "c136a0742d34ca0c0ff01958ec37855e8d2c8e8c",
+                "url": "https://api.github.com/repos/FlagshipWP/flagship-library/zipball/85dd6711160747bf21b640ddd123334f7c8675c0",
+                "reference": "85dd6711160747bf21b640ddd123334f7c8675c0",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "flagship-library.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Neu",
+                    "email": "rob@flagshipwp.com",
+                    "homepage": "http://flagshipwp.com"
+                }
+            ],
+            "description": "A helpful libray of functions and classes for Flagship themes.",
+            "homepage": "https://github.com/FlagshipWP/flagship-library",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2014-11-07 21:33:36"
+        },
+        {
+            "name": "justintadlock/hybrid-core",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/justintadlock/hybrid-core.git",
+                "reference": "e7e20a4d1aad1a17e07da23c7c04fc5947528c0b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/justintadlock/hybrid-core/zipball/e7e20a4d1aad1a17e07da23c7c04fc5947528c0b",
+                "reference": "e7e20a4d1aad1a17e07da23c7c04fc5947528c0b",
                 "shasum": ""
             },
             "type": "library",
@@ -42,7 +80,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2014-08-12 14:41:22"
+            "time": "2014-10-20 22:12:17"
         },
         {
             "name": "zamoose/themehookalliance",
@@ -50,20 +88,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zamoose/themehookalliance.git",
-                "reference": "f4950c6343e85b105c0c78a65e90df2f1476e6c6"
+                "reference": "c66f3a7aa17d3f409d875d08e76cb344f2de6683"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zamoose/themehookalliance/zipball/f4950c6343e85b105c0c78a65e90df2f1476e6c6",
-                "reference": "f4950c6343e85b105c0c78a65e90df2f1476e6c6",
+                "url": "https://api.github.com/repos/zamoose/themehookalliance/zipball/c66f3a7aa17d3f409d875d08e76cb344f2de6683",
+                "reference": "c66f3a7aa17d3f409d875d08e76cb344f2de6683",
                 "shasum": ""
             },
             "type": "library",
-            "autoload": {
-                "files": [
-                    "tha-theme-hooks.php"
-                ]
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0+"
@@ -79,13 +112,14 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2014-09-13 04:43:40"
+            "time": "2014-11-06 04:22:41"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "flagshipwp/flagship-library": 20,
         "zamoose/themehookalliance": 20
     },
     "prefer-stable": false,

@@ -68,7 +68,7 @@ $after-header-border-color:      $base-border-color;
 $after-header-link-color:        lighten($nav-link-color, 10);
 $after-header-link-hover-color:  $base-link-color;
 
-$menu-button-background-color:   $base-link-color;
+$menu-button-background-color:   $base-button-background-color;
 $menu-button-link-color:         $white;
 $sidr-background-color:          lighten($off-black, 3);
 $sidr-border-color:              rgba(255, 255, 255, .1);
@@ -117,6 +117,11 @@ $corner-ribbon-background-color:    $base-accent-color;
 $corner-ribbon-font-color:          $white;
 $gallery-caption-background-color:  $off-black;
 $gallery-caption-font-color:        $white;
+
+//* Author Box Colors
+//------------------------------------------------------------------------------
+$author-box-background-color: $white;
+$author-box-border-color:     $base-border-color;
 
 //* Icon Colors
 //------------------------------------------------------------------------------
