@@ -1,4 +1,4 @@
-// https://github.com/gruntjs/grunt-contrib-sass
+// https://github.com/gruntjs/grunt-sass
 module.exports = {
 	options: {
 		sourceMap: true,
