@@ -80,6 +80,9 @@ function compass_setup() {
 	// Add support for loop pagination.
 	add_theme_support( 'loop-pagination' );
 
+	// Add support for hybrid core template hierarchy.
+	add_theme_support( 'hybrid-core-template-hierarchy' );
+
 	// Add support for flagship footer widgets.
 	add_theme_support( 'flagship-footer-widgets', 3 );
 }
