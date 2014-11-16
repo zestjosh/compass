@@ -15,6 +15,8 @@
 
 	<h1 <?php hybrid_attr( 'loop-title' ); ?>><?php hybrid_loop_title(); ?></h1>
 
+	<?php hybrid_get_menu( 'breadcrumbs' ); ?>
+
 	<?php if ( is_category() || is_tax() ) : ?>
 
 		<?php hybrid_get_menu( 'sub-terms' ); ?>

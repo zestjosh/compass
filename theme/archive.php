@@ -17,8 +17,6 @@
 
 <div <?php hybrid_attr( 'site-inner' ); ?>>
 
-	<?php hybrid_get_menu( 'breadcrumbs' ); ?>
-
 	<?php tha_content_before(); ?>
 
 	<main <?php hybrid_attr( 'content' ); ?>>
