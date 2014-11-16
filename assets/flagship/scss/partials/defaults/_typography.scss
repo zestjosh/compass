@@ -20,7 +20,7 @@ input[type="reset"],
 input[type="submit"],
 textarea:focus,
 .button {
-	@include transition(all, .1s, ease-in-out);
+	@include transition(all, 0.1s, ease-in-out);
 }
 
 ::-moz-selection {
@@ -34,7 +34,7 @@ textarea:focus,
 }
 
 a {
-	@include transition(color .1s linear);
+	@include transition(color 0.1s linear);
 	color: $base-link-color;
 	text-decoration: none;
 
@@ -118,7 +118,7 @@ sup {
 }
 
 sub {
-	top: .5ex;
+	top: 0.5ex;
 }
 
 small {

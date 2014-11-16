@@ -1,6 +1,6 @@
 .nav-menu {
 	clear: both;
-	font-size: .001px;
+	font-size: 0.001px;
 	line-height: 1;
 	width: 100%;
 
@@ -179,7 +179,7 @@
 	color: $menu-button-link-color;
 	background: $menu-button-background-color;
 	border-radius: $base-border-radius;
-	@include transition (all .2s ease-in-out);
+	@include transition (all 0.2s ease-in-out);
 	cursor: pointer;
 
 	@include media($medium-screen-up) {
@@ -279,7 +279,7 @@
 	display: block;
 
 	.page-numbers {
-		@include transition (all .2s ease-in-out);
+		@include transition (all 0.2s ease-in-out);
 		background: $pagination-background-color;
 		border: 1px solid $pagination-border-color;
 		border-radius: $base-border-radius;
@@ -374,7 +374,7 @@
 
 	span,
 	a {
-		@include transition (all .2s ease-in-out);
+		@include transition (all 0.2s ease-in-out);
 		border-radius: $base-border-radius;
 		display: inline-block;
 		padding: 5px 15px;
