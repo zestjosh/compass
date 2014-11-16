@@ -26,7 +26,7 @@ add_action( 'after_setup_theme', 'compass_setup', 5 );
  * @return  void
  */
 function compass_setup() {
-	// Add Support for Theme layouts.
+	// http://themehybrid.com/docs/theme-layouts
 	add_theme_support(
 		'theme-layouts',
 		array(
@@ -38,13 +38,13 @@ function compass_setup() {
 		array( 'default' => is_rtl() ? '2c-r' :'2c-l' )
 	);
 
-	// Handle content width for embeds and images.
+	// http://themehybrid.com/docs/hybrid_set_content_width
 	hybrid_set_content_width( 1140 );
 
-	// Add default posts and comments RSS feed links to head.
+	// http://codex.wordpress.org/Automatic_Feed_Links
 	add_theme_support( 'automatic-feed-links' );
 
-	// Load theme styles.
+	// http://themehybrid.com/docs/hybrid-core-styles
 	add_theme_support( 'hybrid-core-styles', array( 'google-fonts', 'parent', 'style', )	);
 
 	// Add navigation menus.
@@ -62,25 +62,25 @@ function compass_setup() {
 		'chat',
 	);
 
-	// Add support for Post Formats.
+	// http://codex.wordpress.org/Post_Formats
 	add_theme_support( 'post-formats', $formats );
 
-	// Add support for Post Thumbnails on posts and pages.
+	// http://codex.wordpress.org/Post_Thumbnails
 	add_theme_support( 'post-thumbnails' );
 
-	// Add support for easer image usage.
+	// https://github.com/justintadlock/get-the-image
 	add_theme_support( 'get-the-image' );
 
-	// Add a nicer [gallery] shortcode implementation.
+	// https://github.com/justintadlock/cleaner-gallery
 	add_theme_support( 'cleaner-gallery' );
 
-	// Add better captions for themes to style.
+	// https://github.com/justintadlock/hybrid-core/blob/master/extensions/cleaner-caption.php
 	add_theme_support( 'cleaner-caption' );
 
-	// Add support for loop pagination.
+	// http://themehybrid.com/docs/loop-pagination
 	add_theme_support( 'loop-pagination' );
 
-	// Add support for hybrid core template hierarchy.
+	// http://themehybrid.com/docs/template-hierarchy
 	add_theme_support( 'hybrid-core-template-hierarchy' );
 
 	// Add support for flagship footer widgets.
