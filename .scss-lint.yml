@@ -5,9 +5,6 @@ linters:
   Comment:
     enabled: false # False since style.dev.css should also contain heading comments
 
-  DuplicateProperty:
-    enabled: false
-
   Indentation:
     character: tab
     width: 1 # Set to one, as tabs are used, not spaces.
@@ -16,13 +13,16 @@ linters:
     style: include_zero
 
   PropertySortOrder:
-    enabled: false
+    enabled: false # To be handled with CSSComb
 
   SelectorDepth:
     enabled: false
 
   SingleLinePerProperty:
     allow_single_line_rule_sets: false
+
+  StringQuotes:
+    style: double_quotes
 
   UrlQuotes:
     enabled: false
