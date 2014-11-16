@@ -93,20 +93,20 @@ add_action( 'after_setup_theme', 'compass_includes', 15 );
  */
 function compass_includes() {
 	// Set the includes directories.
-	$includes_dir = get_template_directory() . '/includes';
+	$includes_dir = trailingslashit( get_template_directory() ) . 'includes/';
 
 	// Load the main file in the Flagship library directory.
-	require_once $includes_dir . '/vendor/flagship-library/flagship-library.php';
+	require_once $includes_dir . 'vendor/flagship-library/flagship-library.php';
 	new Flagship_Library;
 
 	// Load all PHP files in the vendor directory.
-	require_once $includes_dir . '/vendor/tha-theme-hooks.php';
+	require_once $includes_dir . 'vendor/tha-theme-hooks.php';
 
 	// Load all PHP files in the includes directory.
-	require_once $includes_dir . '/compatibility.php';
-	require_once $includes_dir . '/general.php';
-	require_once $includes_dir . '/scripts.php';
-	require_once $includes_dir . '/widgetize.php';
+	require_once $includes_dir . 'compatibility.php';
+	require_once $includes_dir . 'general.php';
+	require_once $includes_dir . 'scripts.php';
+	require_once $includes_dir . 'widgetize.php';
 }
 
 // Add a hook for child themes to execute code.
