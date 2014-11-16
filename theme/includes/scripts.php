@@ -10,6 +10,26 @@
  * @since       1.0.0
  */
 
+add_action( 'admin_init', 'compass_add_editor_styles' );
+/**
+ * Replace the default theme stylesheet with a RTL version when a RTL
+ * language is being used.
+ *
+ * @since  1.2.0
+ * @access public
+ * @return void
+ */
+function compass_add_editor_styles() {
+	// Set up editor styles
+	$editor_styles   = array();
+	$editor_styles[] = '//fonts.googleapis.com/css?family=Raleway:400,600|Lato:400,400italic,700';
+	$editor_styles[] = 'css/genericons.css';
+	$editor_styles[] = 'css/editor-style.css';
+
+	// Add the editor styles.
+	add_editor_style( $editor_styles );
+}
+
 add_action( 'wp_enqueue_scripts', 'compass_rtl_add_data' );
 /**
  * Replace the default theme stylesheet with a RTL version when a RTL
