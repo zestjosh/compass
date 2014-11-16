@@ -23,6 +23,8 @@
 
 		<?php tha_content_top(); ?>
 
+		<?php hybrid_get_menu( 'breadcrumbs' ); ?>
+
 		<?php get_template_part( 'misc-templates/loop-meta' ); ?>
 
 		<?php if ( have_posts() ) : ?>
