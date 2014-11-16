@@ -1,9 +1,15 @@
-# Default application configuration that all configurations inherit from.
-linters:
-  BorderZero:
-    enabled: true
+# Default application configuration that all configurations inherit from:
+# https://github.com/causes/scss-lint/blob/master/config/default.yml
 
-  CapitalizationInSelector:
+scss_files: "**/*.scss"
+
+linters:
+  BangFormat:
+    enabled: true
+    space_before_bang: true
+    space_after_bang: false
+
+  BorderZero:
     enabled: true
 
   ColorKeyword:
@@ -21,6 +27,10 @@ linters:
   DuplicateProperty:
     enabled: false
 
+  ElsePlacement:
+    enabled: true
+    style: same_line # or 'new_line'
+
   EmptyLineBetweenBlocks:
     enabled: true
     ignore_single_line_blocks: true
@@ -33,10 +43,12 @@ linters:
     present: true
 
   HexLength:
-    style: short
+    enabled: true
+    style: short # or 'long'
 
   HexNotation:
-    style: lowercase
+    enabled: true
+    style: lowercase # or 'uppercase'
 
   HexValidation:
     enabled: true
@@ -44,8 +56,12 @@ linters:
   IdWithExtraneousSelector:
     enabled: true
 
-  Indentation:
+  ImportPath:
     enabled: true
+    leading_underscore: false
+    filename_extension: false
+
+  Indentation:
     character: tab
     width: 1 # Set to one, as tabs are used, not spaces.
 
@@ -61,19 +77,34 @@ linters:
     enabled: true
     convention: hyphenated_lowercase # or 'BEM', or a regex pattern
 
+  NestingDepth:
+    enabled: true
+    max_depth: 3
+
   PlaceholderInExtend:
     enabled: true
 
   PropertySortOrder:
     enabled: false
+    ignore_unspecified: false
 
   PropertySpelling:
     enabled: true
     extra_properties: []
 
+  QualifyingElement:
+    enabled: true
+    allow_element_with_attribute: false
+    allow_element_with_class: false
+    allow_element_with_id: false
+
   SelectorDepth:
     enabled: false
     max_depth: 3
+
+  SelectorFormat:
+    enabled: true
+    convention: hyphenated_lowercase # or 'BEM', or 'snake_case', or 'camel_case', or a regex pattern
 
   Shorthand:
     enabled: true
@@ -90,13 +121,14 @@ linters:
 
   SpaceAfterPropertyColon:
     enabled: true
-    style: one_space
+    style: one_space # or 'no_space', or 'at_least_one_space', or 'aligned'
 
   SpaceAfterPropertyName:
     enabled: true
 
   SpaceBeforeBrace:
     enabled: true
+    style: space
     allow_single_line_padding: false
 
   SpaceBetweenParens:
@@ -110,6 +142,9 @@ linters:
   TrailingSemicolon:
     enabled: true
 
+  TrailingZero:
+    enabled: false
+
   UnnecessaryMantissa:
     enabled: true
 
@@ -122,5 +157,14 @@ linters:
   UrlQuotes:
     enabled: false
 
+  VendorPrefixes:
+    enabled: true
+    identifier_list: base
+    include: []
+    exclude: []
+
   ZeroUnit:
     enabled: true
+
+  Compass::*:
+    enabled: false
