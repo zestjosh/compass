@@ -25,6 +25,18 @@ module.exports = {
 			}
 		]
 	},
+	editorstyle: {
+		files: [
+			{
+				cwd: '<%= paths.tmp %>',
+				expand: true,
+				flatten: true,
+				src: ['editor-style*.css'],
+				dest: '<%= paths.theme %>css/',
+				filter: 'isFile'
+			}
+		]
+	},
 	font: {
 		files: [
 			{
