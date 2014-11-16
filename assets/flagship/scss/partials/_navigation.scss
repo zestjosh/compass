@@ -197,7 +197,6 @@
 
 .sidr {
 	display: none;
-	position: absolute;
 	position: fixed;
 	top: 0;
 	height: 100%;
@@ -293,11 +292,11 @@
 	}
 
 	.next:before {
-		content: '\2192';
+		content: "\2192";
 	}
 
 	.prev:before {
-		content: '\2190';
+		content: "\2190";
 	}
 
 	a {
@@ -313,11 +312,11 @@
 
 .rtl {
 	.pagination .next:before {
-		content: '\2190';
+		content: "\2190";
 	}
 
 	.pagination .prev:before {
-		content: '\2192';
+		content: "\2192";
 	}
 }
 

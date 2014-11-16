@@ -20,7 +20,7 @@ input[type="search"] {
 .site-container:before,
 .site-inner:before,
 .wrap:before {
-	content: ' ';
+	content: " ";
 	display: table;
 }
 
@@ -36,7 +36,7 @@ input[type="search"] {
 .site-inner:after,
 .wrap:after {
 	clear: both;
-	content: ' ';
+	content: " ";
 	display: table;
 }
 
