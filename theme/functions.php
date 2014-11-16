@@ -45,7 +45,7 @@ function compass_setup() {
 	add_theme_support( 'automatic-feed-links' );
 
 	// http://themehybrid.com/docs/hybrid-core-styles
-	add_theme_support( 'hybrid-core-styles', array( 'google-fonts', 'parent', 'style', )	);
+	add_theme_support( 'hybrid-core-styles', array( 'style', 'google-fonts', 'genericons', ) );
 
 	// Add navigation menus.
 	register_nav_menu( 'after-header', _x( 'After Header Menu', 'nav menu location', 'compass' ) );
