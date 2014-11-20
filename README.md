@@ -54,7 +54,7 @@ Compass uses [Ruby](https://www.ruby-lang.org/en/) and Sass to build the `.scss`
 
 ### Composer
 
-Compass also uses [Composer](https://getcomposer.org/) to manage PHP dependencies such as [Hybrid Core](https://github.com/justintadlock/hybrid-core) and [Theme Hook Alliance](https://github.com/zamoose/themehookalliance) support. [Install Composer](https://getcomposer.org/doc/00-intro.md) to enable this functionality.
+Compass also uses [Composer](https://getcomposer.org/) to manage PHP dependencies such as [Hybrid Core](https://github.com/justintadlock/hybrid-core), [Flagship Library](https://github.com/FlagshipWP/flagship-library), and [Theme Hook Alliance](https://github.com/zamoose/themehookalliance) support. [Install Composer](https://getcomposer.org/doc/00-intro.md) to enable this functionality.
 
 Make sure you have `~/.composer/vendor/bin/` or `/usr/local/bin/` (if you moved it) in your path by running:
 
