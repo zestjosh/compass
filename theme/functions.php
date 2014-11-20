@@ -14,7 +14,7 @@
 require_once( trailingslashit( get_template_directory() ) . 'hybrid-core/hybrid.php' );
 new Hybrid();
 
-add_action( 'after_setup_theme', 'compass_setup', 5 );
+add_action( 'after_setup_theme', 'compass_setup', 10 );
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -87,7 +87,7 @@ function compass_setup() {
 	add_theme_support( 'flagship-footer-widgets', 3 );
 }
 
-add_action( 'after_setup_theme', 'compass_includes', 15 );
+add_action( 'after_setup_theme', 'compass_includes', 10 );
 /**
  * Load all required theme files.
  *
