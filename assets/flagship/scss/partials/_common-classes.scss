@@ -2,7 +2,12 @@
 --------------------------------------------- */
 
 .breadcrumbs {
+	font-size: $secondary-font-size;
 	margin-bottom: 15px;
+
+	.sep {
+		padding: 0 4px;
+	}
 }
 
 .loop-meta,
