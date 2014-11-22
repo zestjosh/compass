@@ -41,6 +41,7 @@ build:
   - 'newer:cssmin'
   - 'newer:usebanner'
   - 'newer:copy:css'
+  - 'newer:copy:editorstyle'
 # Build Fonts from source to production
 'build:font':
   - 'clean:font'
@@ -58,8 +59,11 @@ build:
   - 'newer:jsvalidate:theme'
 # Build internationalisation features
 'build:i18n':
+  - 'clean:languages'
   - 'addtextdomain:flagshiplibrary'
   - 'makepot'
+  - 'potomo'
+  - 'newer:copy:languages'
 # Check health of the project
 check:
   - 'scsslint'

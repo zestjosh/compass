@@ -13,20 +13,24 @@
 
 <div <?php hybrid_attr( 'loop-meta' ); ?>>
 
-	<h1 <?php hybrid_attr( 'loop-title' ); ?>><?php hybrid_loop_title(); ?></h1>
+	<div <?php hybrid_attr( 'wrap', 'loop-meta' ); ?>>
 
-	<?php if ( is_category() || is_tax() ) : ?>
+		<h1 <?php hybrid_attr( 'loop-title' ); ?>><?php hybrid_loop_title(); ?></h1>
 
-		<?php hybrid_get_menu( 'sub-terms' ); ?>
+		<?php if ( is_category() || is_tax() ) : ?>
 
-	<?php endif; ?>
+			<?php hybrid_get_menu( 'sub-terms' ); ?>
 
-	<?php if ( ! is_paged() && $desc = hybrid_get_loop_description() ) : ?>
+		<?php endif; ?>
 
-		<div <?php hybrid_attr( 'loop-description' ); ?>>
-			<?php echo $desc; ?>
-		</div><!-- .loop-description -->
+		<?php if ( ! is_paged() && $desc = hybrid_get_loop_description() ) : ?>
 
-	<?php endif; ?>
+			<div <?php hybrid_attr( 'loop-description' ); ?>>
+				<?php echo $desc; ?>
+			</div><!-- .loop-description -->
+
+		<?php endif; ?>
+
+	</div>
 
 </div><!-- .loop-meta -->

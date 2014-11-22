@@ -36,8 +36,8 @@ $h6-font-size: floor(modular-scale($base-font-size, 1, $major-second));
 
 // Title Font Sizes
 //------------------------------------------------------------------------------
-$archive-title-size:    $h5-font-size;
-$widget-title-size:     $h6-font-size;
+$loop-title-size:    $h1-font-size;
+$widget-title-size:  $h6-font-size;
 
 // Menu Font Sizes
 //------------------------------------------------------------------------------

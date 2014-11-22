@@ -48,7 +48,7 @@ module.exports = {
 			'<%= files.scss %>'
 		],
 		tasks: [
-			'sass',
+			'sass:theme',
 			'autoprefixer',
 			'wpcss:css',
 			'replace:stylecomments',

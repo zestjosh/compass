@@ -17,13 +17,13 @@
 
 <div <?php hybrid_attr( 'site-inner' ); ?>>
 
-	<?php hybrid_get_menu( 'breadcrumbs' ); ?>
-
 	<?php tha_content_before(); ?>
 
 	<main <?php hybrid_attr( 'content' ); ?>>
 
 		<?php tha_content_top(); ?>
+
+		<?php hybrid_get_menu( 'breadcrumbs' ); ?>
 
 		<?php get_template_part( 'misc-templates/loop-meta' ); ?>
 

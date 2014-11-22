@@ -25,6 +25,18 @@ module.exports = {
 			}
 		]
 	},
+	editorstyle: {
+		files: [
+			{
+				cwd: '<%= paths.tmp %>',
+				expand: true,
+				flatten: true,
+				src: ['editor-style*.css'],
+				dest: '<%= paths.theme %>css/',
+				filter: 'isFile'
+			}
+		]
+	},
 	font: {
 		files: [
 			{
@@ -90,6 +102,17 @@ module.exports = {
 				flatten: true,
 				src: ['screenshot.png'],
 				dest: '<%= paths.theme %>',
+				filter: 'isFile'
+			}
+		]
+	},
+	languages: {
+		files: [
+			{
+				cwd: '<%= paths.assets %><%= paths.languages %>',
+				expand: true,
+				src: ['*.po'],
+				dest: '<%= paths.theme%><%= paths.languages %>',
 				filter: 'isFile'
 			}
 		]

@@ -4,28 +4,113 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c63f10f75db22e9396f71ef197bd0ea9",
+    "hash": "98103ec9c3542d658eb28fcd1b34a705",
     "packages": [
         {
-            "name": "flagshipwp/flagship-library",
-            "version": "dev-master",
+            "name": "composer/installers",
+            "version": "v1.0.18",
             "source": {
                 "type": "git",
-                "url": "https://github.com/FlagshipWP/flagship-library.git",
-                "reference": "85dd6711160747bf21b640ddd123334f7c8675c0"
+                "url": "https://github.com/composer/installers.git",
+                "reference": "74fb0a7a1a23696d9c8cc2fba5903f6711cdd067"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FlagshipWP/flagship-library/zipball/85dd6711160747bf21b640ddd123334f7c8675c0",
-                "reference": "85dd6711160747bf21b640ddd123334f7c8675c0",
+                "url": "https://api.github.com/repos/composer/installers/zipball/74fb0a7a1a23696d9c8cc2fba5903f6711cdd067",
+                "reference": "74fb0a7a1a23696d9c8cc2fba5903f6711cdd067",
+                "shasum": ""
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "class": "Composer\\Installers\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Composer\\Installers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "http://composer.github.com/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Hurad",
+                "MODX Evo",
+                "OXID",
+                "WolfCMS",
+                "agl",
+                "annotatecms",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "drupal",
+                "elgg",
+                "fuelphp",
+                "installer",
+                "joomla",
+                "kohana",
+                "laravel",
+                "lithium",
+                "magento",
+                "mako",
+                "mediawiki",
+                "modulework",
+                "moodle",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "puppet",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "symfony",
+                "typo3",
+                "wordpress",
+                "zend",
+                "zikula"
+            ],
+            "time": "2014-08-18 20:00:12"
+        },
+        {
+            "name": "flagshipwp/flagship-library",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlagshipWP/flagship-library.git",
+                "reference": "66b68a743ffef172e97715bac6576a4c08e430eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlagshipWP/flagship-library/zipball/66b68a743ffef172e97715bac6576a4c08e430eb",
+                "reference": "66b68a743ffef172e97715bac6576a4c08e430eb",
                 "shasum": ""
             },
             "type": "library",
-            "autoload": {
-                "classmap": [
-                    "flagship-library.php"
-                ]
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0+"
@@ -42,7 +127,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2014-11-07 21:33:36"
+            "time": "2014-11-22 06:54:31"
         },
         {
             "name": "justintadlock/hybrid-core",
@@ -119,7 +204,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "flagshipwp/flagship-library": 20,
         "zamoose/themehookalliance": 20
     },
     "prefer-stable": false,

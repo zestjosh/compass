@@ -9,43 +9,40 @@ __License:__ [GPL-2.0+](http://www.gnu.org/licenses/gpl-2.0.html)
 
 Compass will revolutionize your theme development workflow by removing all the guesswork and letting you focus on the fun stuff. Built using the latest and greatest web development tools like Grunt, Sass, Bourbon, and Hybrid Core.
 
-## Project Development
-
-This documentation is by no means complete and will be expanded upon in the near future. In order to get up and running, you'll need to install a few key components. We've put together a screencast which will walk you through the setup process and we also have an entire pulic [forum dedicated to Compass](http://community.flagshipwp.com/category/compass) where you can register and learn from other developers who are using it to build cool stuff.
-
 ### Project Structure
 
-    .
     ├── assets
-    │   ├── bower (added by build task)
-    │   ├── composer (added by build task)
-    │   └── flagship
-    │       ├── images
-    │       ├── js
-    │       └── scss
+    │   ├── bower (added by build task)
+    │   ├── composer (added by build task)
+    │   └── flagship
+    │       ├── images
+    │       ├── js
+    │       └── scss
     ├── dist (added by package task)
     ├── grunt
-    │   ├── config
-    │   └── tasks
+    │   ├── config
+    │   └── tasks
     ├── logs (added by build/check tasks)
     ├── reports (added by plato task)
     ├── theme
-    │   ├── comment
-    │   ├── content
-    │   │   ├── archive
-    │   │   └── singular
-    │   ├── font (added by build task)
-    │   ├── hybrid-core (pulled in as dependency)
-    │   ├── includes
-    │   │   ├── library
-    │   │   └── vendor (added by build task)
-    │   ├── js (added by build task)
-    │   ├── languages (added by build task)
-    │   ├── menu
-    │   ├── misc-templates
-    │   └── sidebar
+    │   ├── comment
+    │   ├── content
+    │   │   ├── archive
+    │   │   └── singular
+    │   ├── css (added by build task)
+    │   ├── font (added by build task)
+    │   ├── hybrid-core (pulled in as dependency)
+    │   ├── includes
+    │   │   └── vendor (added by build task)
+    │   │       └── flagship-library (pulled in as dependency)
+    │   ├── js (added by build task)
+    │   ├── languages (added by build task)
+    │   ├── menu
+    │   ├── misc-templates
+    │   └── sidebar
     └── tmp (added by build task)
 
+<<<<<<< HEAD
 ### Composer
 
 Compass also uses [Composer](https://getcomposer.org/) to manage PHP dependencies such as [Hybrid Core](https://github.com/justintadlock/hybrid-core) and [Theme Hook Alliance](https://github.com/zamoose/themehookalliance) support. [Install Composer](https://getcomposer.org/doc/00-intro.md) to enable this functionality.
@@ -269,12 +266,13 @@ After a theme is built, you may wish to package it up as a zip file so it can be
 There is also an optional `compress:dev` task, which does similar, but instead of just the theme directory, it takes the parent project root directory and zips that up. This is then suitable for further development work, for those who don't have access to the original repo.
 
 ## Reports
+=======
 
-As well as the checks, this project includes tools for performing static analysis of the code. 
+## Learn How to Use Compass
+>>>>>>> develop
 
-* `grunt stylestats` - displays a list of statistics for the style.css such as the number of rules, selectors, unique font-sizes, unique colours, ID selectors, float properties, important keywords and media queries.
-* `grunt plato` - this generates a collection of files in the `reports/plato` directory with subdirectories of assets and grunt. These files contain analysis of the JavaScript files in those groups. This data is historically tracked, so each run of this task adds a new set of data points so that code quality can be tracked over time.
-* `grunt phpmd` - PHP Mess Detector looks at the complexity of PHP code, and identifies areas of potential concern. It uses the configuration in `phpmd.xml` and saves the results to `logs/phpmd.log`.
-* `grunt phpcpd` - PHP Copy Paste Detector looks for blocks of duplicate code, so that they could potentially be refactored to keep the code DRY (_don't repeat yourself_). The results are saved as an XML file (a limitation on _phpcpd_ itself) in `logs/phpcpd.log`.
+Compass is designed to be a boilerplate for your own custom WordPress themes. For more information about how to [install](https://github.com/FlagshipWP/compass/wiki/Installing-Compass) and use Compass, visit the [Compass Wiki](https://github.com/FlagshipWP/compass/wiki) and our [community forum](http://community.flagshipwp.com/category/compass). If you find any bugs, issues, or have questions please open an issue or create a thread on the forum. Thanks for giving Compass a look! We can't wait to see what you build with it.
 
-One similar tool that is not used is PHPDCD (PHP Dead Code Detector). That looks for functions that are defined but never called. Due to event-driven approach taken by WordPress in calling many functions via action hooks and filters, this currently produces far too many false positives to be useful.
+## Contributing
+
+We're open to any and all feedback about the project and we're actively looking for contributors. You can submit code changes here on GitHub by opening a pull request. If you'd like to submit ideas, please open an issue or create a thread on our [community forum](http://community.flagshipwp.com/category/compass). If you would like to translate Compass into your language, we have a [public Transifex project](https://www.transifex.com/projects/p/flagship-compass/) set up where you can request team access.

@@ -10,6 +10,27 @@
  * @since       1.0.0
  */
 
+add_action( 'admin_init', 'compass_add_editor_styles' );
+/**
+ * Replace the default theme stylesheet with a RTL version when a RTL
+ * language is being used.
+ *
+ * @since  1.2.0
+ * @access public
+ * @return void
+ */
+function compass_add_editor_styles() {
+	// Set up editor styles
+	$editor_styles = array(
+		'//fonts.googleapis.com/css?family=Raleway:400,600|Lato:400,400italic,700',
+		'css/genericons.css',
+		'css/editor-style.css',
+	);
+
+	// Add the editor styles.
+	add_editor_style( $editor_styles );
+}
+
 add_action( 'wp_enqueue_scripts', 'compass_rtl_add_data' );
 /**
  * Replace the default theme stylesheet with a RTL version when a RTL
@@ -24,20 +45,37 @@ function compass_rtl_add_data() {
 	wp_style_add_data( 'style', 'suffix', hybrid_get_min_suffix() );
 }
 
-add_action( 'wp_enqueue_scripts', 'compass_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'compass_enqueue_styles', 4 );
 /**
- * Enqueue theme styles.
+ * Register our core parent theme styles.
+ *
+ * Normally we would enqueue all styles here, but because we've defined our base
+ * styles in the theme setup function as Hybrid Core Styles, we only need to
+ * register them. Hybrid Core will ensure they're loaded in the correct order.
+ * Any non-global styles can still be enqueued manually in the usual way within
+ * this function.
  *
  * @since  1.0.0
  * @access public
+ * @see    http://themehybrid.com/docs/hybrid-core-styles
  * @return void
  */
 function compass_enqueue_styles() {
 	$css_dir = trailingslashit( get_template_directory_uri() ) . 'css/';
 	$suffix  = hybrid_get_min_suffix();
 
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Raleway:400,600|Lato:400,400italic,700', array(), '1.0.0' );
-	wp_enqueue_style( 'genericons', $css_dir . "genericons{$suffix}.css", array(), '3.1' );
+	wp_register_style(
+		'google-fonts',
+		'//fonts.googleapis.com/css?family=Raleway:400,600|Lato:400,400italic,700',
+		array(),
+		null
+	);
+	wp_register_style(
+		'genericons',
+		$css_dir . "genericons{$suffix}.css",
+		array(),
+		'3.2'
+	);
 }
 
 add_action( 'wp_enqueue_scripts', 'compass_enqueue_scripts' );
@@ -52,5 +90,11 @@ function compass_enqueue_scripts() {
 	$js_dir = trailingslashit( get_template_directory_uri() ) . 'js/';
 	$suffix = hybrid_get_min_suffix();
 
-	wp_enqueue_script( 'compass', $js_dir . "theme{$suffix}.js", array( 'jquery' ), null, true );
+	wp_enqueue_script(
+		'compass',
+		$js_dir . "theme{$suffix}.js",
+		array( 'jquery' ),
+		null,
+		true
+	);
 }

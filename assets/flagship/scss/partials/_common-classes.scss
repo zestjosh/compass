@@ -2,7 +2,12 @@
 --------------------------------------------- */
 
 .breadcrumbs {
+	font-size: $secondary-font-size;
 	margin-bottom: 15px;
+
+	.sep {
+		padding: 0 4px;
+	}
 }
 
 .loop-meta,
@@ -39,8 +44,8 @@
 	margin-bottom: 0;
 }
 
-.archive-title {
-	font-size: $archive-title-size;
+.loop-title {
+	font-size: $loop-title-size;
 	font-weight: 600;
 }
 
