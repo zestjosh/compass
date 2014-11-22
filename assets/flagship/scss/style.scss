@@ -51,19 +51,11 @@
 
 */
 // Load Bourbon
-<<<<<<< HEAD
-@import 'bourbon';
-
-// Load Neat Grid
-@import 'variables/neat-grid';
-@import 'neat';
-=======
-@import "../../bower/bourbon/bourbon";
+@import "bourbon";
 
 // Load Neat Grid
 @import "variables/neat-grid";
-@import "../../bower/neat/neat";
->>>>>>> develop
+@import "neat";
 
 // Load Global Variables
 @import "variables/colors";
