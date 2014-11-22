@@ -105,5 +105,16 @@ module.exports = {
 				filter: 'isFile'
 			}
 		]
+	},
+	languages: {
+		files: [
+			{
+				cwd: '<%= paths.assets %><%= paths.languages %>',
+				expand: true,
+				src: ['*.po'],
+				dest: '<%= paths.theme%><%= paths.languages %>',
+				filter: 'isFile'
+			}
+		]
 	}
 };
