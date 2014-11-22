@@ -59,8 +59,11 @@ build:
   - 'newer:jsvalidate:theme'
 # Build internationalisation features
 'build:i18n':
+  - 'clean:languages'
   - 'addtextdomain:flagshiplibrary'
   - 'makepot'
+  - 'potomo'
+  - 'newer:copy:languages'
 # Check health of the project
 check:
   - 'scsslint'
