@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dff607ea14aae309b86df8e2dc370cf1",
+    "hash": "98103ec9c3542d658eb28fcd1b34a705",
     "packages": [
         {
             "name": "composer/installers",
@@ -98,24 +98,19 @@
         },
         {
             "name": "flagshipwp/flagship-library",
-            "version": "dev-master",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FlagshipWP/flagship-library.git",
-                "reference": "8417d6f6151c37647b8f08c5f5a4d3fbdcf7d593"
+                "reference": "66b68a743ffef172e97715bac6576a4c08e430eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FlagshipWP/flagship-library/zipball/8417d6f6151c37647b8f08c5f5a4d3fbdcf7d593",
-                "reference": "8417d6f6151c37647b8f08c5f5a4d3fbdcf7d593",
+                "url": "https://api.github.com/repos/FlagshipWP/flagship-library/zipball/66b68a743ffef172e97715bac6576a4c08e430eb",
+                "reference": "66b68a743ffef172e97715bac6576a4c08e430eb",
                 "shasum": ""
             },
             "type": "library",
-            "autoload": {
-                "classmap": [
-                    "flagship-library.php"
-                ]
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0+"
@@ -132,7 +127,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2014-11-10 06:51:48"
+            "time": "2014-11-22 06:54:31"
         },
         {
             "name": "justintadlock/hybrid-core",
@@ -209,7 +204,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "flagshipwp/flagship-library": 20,
         "zamoose/themehookalliance": 20
     },
     "prefer-stable": false,

@@ -25,7 +25,7 @@
   },
   "require": {
     "justintadlock/hybrid-core": "~2.0",
-    "flagshipwp/flagship-library": "dev-master",
+    "flagshipwp/flagship-library": "~1.1",
     "zamoose/themehookalliance": "dev-master",
     "composer/installers": "~1.0"
   }
