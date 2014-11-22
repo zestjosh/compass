@@ -68,6 +68,9 @@ function compass_setup() {
 	// http://codex.wordpress.org/Post_Thumbnails
 	add_theme_support( 'post-thumbnails' );
 
+	// https://github.com/justintadlock/breadcrumb-trail
+	add_theme_support( 'breadcrumb-trail' );
+
 	// https://github.com/justintadlock/get-the-image
 	add_theme_support( 'get-the-image' );
 
