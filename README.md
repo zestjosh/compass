@@ -45,7 +45,7 @@ Compass will revolutionize your theme development workflow by removing all the g
 
 ## Learn How to Use Compass
 
-Compass is designed to be a boilerplate for your own custom WordPress themes. For more information about how to install and use Compass, visit the [Compass Wiki](https://github.com/FlagshipWP/compass/wiki) and our [community forum](http://community.flagshipwp.com/category/compass). If you find any bugs, issues, or have questions please open an issue or create a post on the forum. Thanks for giving Compass a look! We can't wait to see what you build with it.
+Compass is designed to be a boilerplate for your own custom WordPress themes. For more information about how to [install](https://github.com/FlagshipWP/compass/wiki/Installing-Compass) and use Compass, visit the [Compass Wiki](https://github.com/FlagshipWP/compass/wiki) and our [community forum](http://community.flagshipwp.com/category/compass). If you find any bugs, issues, or have questions please open an issue or create a thread on the forum. Thanks for giving Compass a look! We can't wait to see what you build with it.
 
 ## Contributing
 
