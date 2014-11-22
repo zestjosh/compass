@@ -17,40 +17,51 @@ This documentation is by no means complete and will be expanded upon in the near
 
     .
     ├── assets
-    │   ├── bower (added by build task)
-    │   ├── composer (added by build task)
-    │   └── flagship
-    │       ├── images
-    │       ├── js
-    │       └── scss
+    │   ├── bower (added by build task)
+    │   ├── composer (added by build task)
+    │   └── flagship
+    │       ├── images
+    │       ├── js
+    │       └── scss
     ├── dist (added by package task)
     ├── grunt
-    │   ├── config
-    │   └── tasks
+    │   ├── config
+    │   └── tasks
     ├── logs (added by build/check tasks)
     ├── reports (added by plato task)
     ├── theme
-    │   ├── comment
-    │   ├── content
-    │   │   ├── archive
-    │   │   └── singular
-    │   ├── css (added by build task)
-    │   ├── font (added by build task)
-    │   ├── hybrid-core (pulled in as dependency)
-    │   ├── includes
-    │   │   ├── library
-    │   │   └── vendor (added by build task)
-    │   ├── js (added by build task)
-    │   ├── languages (added by build task)
-    │   ├── menu
-    │   ├── misc-templates
-    │   └── sidebar
+    │   ├── comment
+    │   ├── content
+    │   │   ├── archive
+    │   │   └── singular
+    │   ├── css (added by build task)
+    │   ├── font (added by build task)
+    │   ├── hybrid-core (pulled in as dependency)
+    │   ├── includes
+    │   │   └── vendor (added by build task)
+    │   │       └── flagship-library (pulled in as dependency)
+    │   ├── js (added by build task)
+    │   ├── languages (added by build task)
+    │   ├── menu
+    │   ├── misc-templates
+    │   └── sidebar
     └── tmp (added by build task)
 
 
 ### Ruby and Sass
 
 Compass uses [Ruby](https://www.ruby-lang.org/en/) and Sass to build the `.scss` files into a CSS file. [Install Ruby](https://www.ruby-lang.org/en/installation/) and then run `gem install sass` to install Sass. You may need to use sudo (for OSX, *nix, BSD etc) or run your command shell as Administrator (for Windows) to do this.
+
+### GNU Gettext
+
+Compass uses [grunt-potomo](https://github.com/axisthemes/grunt-potomo) to compile .po files into binary .mo files. In order for this to work correctly, you must have  [GNU Gettext](http://www.gnu.org/software/gettext/) installed and in your PATH. On Mac OSX, the easiest way to do this is using [Homebrew](http://brew.sh/). Once you have Homebrew installed, run the following commands to install GNU Gettext:
+
+~~~sh
+brew install gettext
+brew link gettext --force
+~~~
+
+To install PHP_CodeSniffer and the WordPress standards:
 
 ### Composer
 
