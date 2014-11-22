@@ -61,8 +61,6 @@ brew install gettext
 brew link gettext --force
 ~~~
 
-To install PHP_CodeSniffer and the WordPress standards:
-
 ### Composer
 
 Compass also uses [Composer](https://getcomposer.org/) to manage PHP dependencies such as [Hybrid Core](https://github.com/justintadlock/hybrid-core), [Flagship Library](https://github.com/FlagshipWP/flagship-library), and [Theme Hook Alliance](https://github.com/zamoose/themehookalliance) support. [Install Composer](https://getcomposer.org/doc/00-intro.md) to enable this functionality.
