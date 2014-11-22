@@ -100,7 +100,6 @@ function compass_includes() {
 
 	// Load the main file in the Flagship library directory.
 	require_once $includes_dir . 'vendor/flagship-library/flagship-library.php';
-	new Flagship_Library;
 
 	// Load all PHP files in the vendor directory.
 	require_once $includes_dir . 'vendor/tha-theme-hooks.php';
