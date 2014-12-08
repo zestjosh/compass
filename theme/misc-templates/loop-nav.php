@@ -36,8 +36,8 @@ if ( is_home() || is_archive() || is_search() ) :
 	?>
 	
 	<nav class="nav-archive">
-		<?php previous_post_link( '<span class="nav-previous">' . __( '%link', 'medifast' ) . '</span>', '&larr; Older Posts' ); ?>
-		<?php next_post_link(     '<span class="nav-next">' . __( '%link', 'medifast' ) . '</span>', 'Newer Posts &rarr;' ); ?>
+		<?php previous_post_link( '<span class="nav-previous">' . __( '%link', 'compass' ) . '</span>', '&larr; Older Posts' ); ?>
+		<?php next_post_link(     '<span class="nav-next">' . __( '%link', 'compass' ) . '</span>', 'Newer Posts &rarr;' ); ?>
 	</nav><!-- .nav-archive -->
 	
 	<?php
