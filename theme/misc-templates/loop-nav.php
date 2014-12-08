@@ -16,7 +16,7 @@
 	<nav class="nav-single">
 		<?php previous_post_link( '<span class="nav-previous">' . __( '%link', 'compass' ) . '</span>', '&larr; Previous Post' ); ?>
 		<?php next_post_link(     '<span class="nav-next">' . __( '%link', 'compass' ) . '</span>', 'Next Post &rarr;' ); ?>
-	</nav><!-- .nav-singl -->
+	</nav><!-- .nav-single -->
 
 	<?php
 
@@ -24,11 +24,22 @@ endif;
 
 if ( is_home() || is_archive() || is_search() ) :
 
-	loop_pagination(
-		array(
-			'prev_text' => '<span class="screen-reader-text">' . __( 'Previous Page', 'compass' ) . '</span>',
-			'next_text' => '<span class="screen-reader-text">' . __( 'Next Page', 'compass' ) . '</span>',
-		)
-	);
+	if ( current_theme_supports( 'loop-pagination' ) ) :
+		loop_pagination(
+			array(
+				'prev_text' => '<span class="screen-reader-text">' . __( 'Previous Page', 'compass' ) . '</span>',
+				'next_text' => '<span class="screen-reader-text">' . __( 'Next Page', 'compass' ) . '</span>',
+			)
+		);
+	else : 
+	?>
+	
+	<nav class="nav-archive">
+		<?php previous_post_link( '<span class="nav-previous">' . __( '%link', 'medifast' ) . '</span>', '&larr; Older Posts' ); ?>
+		<?php next_post_link(     '<span class="nav-next">' . __( '%link', 'medifast' ) . '</span>', 'Newer Posts &rarr;' ); ?>
+	</nav><!-- .nav-archive -->
+	
+	<?php
+	endif;
 
 endif;
