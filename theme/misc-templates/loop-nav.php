@@ -32,6 +32,7 @@ if ( is_home() || is_archive() || is_search() ) :
 			)
 		);
 	else : 
+		
 	?>
 	
 	<nav class="nav-archive">
@@ -40,6 +41,7 @@ if ( is_home() || is_archive() || is_search() ) :
 	</nav><!-- .nav-archive -->
 	
 	<?php
+	
 	endif;
 
 endif;
