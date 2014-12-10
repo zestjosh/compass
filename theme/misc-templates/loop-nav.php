@@ -36,8 +36,8 @@ if ( is_home() || is_archive() || is_search() ) :
 	?>
 	
 	<nav class="nav-archive">
-		<?php previous_post_link( '<span class="nav-previous">' . __( '%link', 'compass' ) . '</span>', '&larr; Older Posts' ); ?>
-		<?php next_post_link(     '<span class="nav-next">' . __( '%link', 'compass' ) . '</span>', 'Newer Posts &rarr;' ); ?>
+		<?php next_posts_link( '<span class="nav-previous">' . __( '&laquo; Older Posts', 'compass' ) . '</span>' ); ?>
+		<?php previous_posts_link( '<span class="nav-next">' . __( 'Newer Posts &raquo;', 'compass' ) . '</span>' ); ?>
 	</nav><!-- .nav-archive -->
 	
 	<?php
